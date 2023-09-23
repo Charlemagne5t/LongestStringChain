@@ -28,6 +28,23 @@ public class SolutionTest {
 
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void longestStrChainTest4() {
+        String[] words = {"a","b","ba","abc","abd","bdca"};
+        int expected = 2;
+        int actual = new Solution().longestStrChain(words);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void longestStrChainTest5() {
+        String[] words = {"xbc","pcxbcf","xb","cxbc","pcxbc"};
+        int expected = 5;
+        int actual = new Solution().longestStrChain(words);
+
+        Assert.assertEquals(expected, actual);
+    }
 
     @Test
     public void isPredecessorTest1() {
